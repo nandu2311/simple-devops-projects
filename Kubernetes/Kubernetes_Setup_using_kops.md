@@ -56,7 +56,7 @@
 
 1. Create kubernetes cluster definitions on S3 bucket
    ```sh
-   kops create cluster --cloud=aws --zones=ap-south-1b --name=demo.k8s.valaxy.net --dns-zone=valaxy.net --dns private 
+   kops create cluster --cloud=aws --zones=ap-south-1b --name=demo.k8s.valaxy.net --dns-zone=valaxy.net --dns private --ssh-public-key ~/.ssh/id_rsa.pub
     ```
 
 1. If you wish to update the cluster worker node sizes use below command 
